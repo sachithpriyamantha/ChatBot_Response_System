@@ -1,0 +1,7 @@
+import re
+import long_responses
+create main.py and long_responses.by
+
+
+message_probability = user_message, recognised_words, single_response, required_words
+response = bot_response, list_of_words, single_response, required_words
