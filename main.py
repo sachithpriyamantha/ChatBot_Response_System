@@ -11,6 +11,9 @@ def message_probability(user_message, recognised_words, single_response=False, r
             message_certainty += 1
     
 
+
+
+
     # calculate recognise words in a user message
     percentage = float(message_certainty) / float(len(recognised_words))
 
@@ -33,8 +36,10 @@ def check_all_messages(message):
         nonlocal highest_prob_list
         highest_prob_list[bot_response] = message_probability(message, list_of_words, single_response, required_words)
 
-#response=====================
 
+
+
+    #response here-----------------------------------------
     response('Hello!', ['hello','hi','sup','hey','heyo'], single_response=True)
     response('I\'m doing fine, and you?', ['how', 'are', 'you', 'doing'], required_words=['how'])
     response('Thank you!', ['i', 'love', 'code', 'place'], required_words=['code', 'place'])
